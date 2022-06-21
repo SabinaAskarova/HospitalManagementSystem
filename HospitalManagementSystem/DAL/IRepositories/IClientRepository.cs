@@ -5,8 +5,8 @@ namespace HospitalManagementSystem.DAL.IRepositories
 {
     public interface IClientRepository
     {
-        public List<Client> Get();
-
+        
+        public Client Add(Client client);
         public void Delete(int id);
     }
 }

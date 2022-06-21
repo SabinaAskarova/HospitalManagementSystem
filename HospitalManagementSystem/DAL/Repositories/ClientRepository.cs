@@ -14,6 +14,13 @@ namespace HospitalManagementSystem.DAL.Repositories
             _ctx = ctx;
         }
 
+        public Client Add(Client client)
+        {
+           _ctx.Clients.Add(client);
+            _ctx.SaveChanges();
+            return client;
+        }
+
         public void Delete(int id)
         {
             Client client = _ctx.Clients.Find(id);
@@ -21,9 +28,6 @@ namespace HospitalManagementSystem.DAL.Repositories
             _ctx.SaveChanges();
         }
 
-        public List<Client> Get()
-        {
-            return _ctx.Clients.OrderBy(m => m.Id).ToList();
-        }
+        
     }
 }

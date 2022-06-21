@@ -21,8 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="BLL\" />
-    <Folder Include="DTOs\" />
     <Folder Include="Utility\" />
   </ItemGroup>
 
